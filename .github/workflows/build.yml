@@ -1,4 +1,8 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+push:
+  branches:
+    - my-config
+  workflow_dispatch:
 
 jobs:
   build:
