@@ -37,20 +37,10 @@
 
         combos {
             compatible = "zmk,combos";
-            combo_esc {
-                timeout-ms = <50>;
-                key-positions = <0 1>;
-                bindings = <&kp ESC>;
-            };
             combo_enter {
                 timeout-ms = <50>;
                 key-positions = <18 19>;
                 bindings = <&kp ENTER>;
-            };
-            combo_del {
-                timeout-ms = <50>;
-                key-positions = <8 9>;
-                bindings = <&kp DEL>;
             };
             combo_reset {
                 timeout-ms = <50>;
@@ -129,6 +119,24 @@
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
+        
+        sym_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  ~       │  `       │  "       │          │          │      │          │          │ !        │  F11     │  F12     │
+            &kp GRAVE &kp LS(GRAVE) &kp DQT &none       &none            &none    &none        &kp EXCLAMATION  &kp F11    &kp F12
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  F1      │  F2      │ '        │  =       │  (       │      │  )       │  _       │  @       │  {       │  }       │
+            &kp F1    &kp F2     &kp APOS  &kp EQUAL     &kp LPAR        &kp RPAR     &kp UNDER  &kp AT  &kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET)
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  ^       │ #        │  *       │  +       │ [        │      │  ]       │          │          │          │          │
+            &kp LS(N6) &kp LS(N3) &kp LS(N8) &kp PLUS &kp LEFT_BRACKET   &kp RIGHT_BRACKET     &kp MINUS      &none      &none      &none
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &trans     &trans    &trans  &trans     &trans
+        //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
 
         fn_layer {
             bindings = <
@@ -140,7 +148,7 @@
             &kp F1    &kp F2        &kp F3       &kp F4     &kp F5            &kp F6     &kp F7   &kp F8    &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │      │          │          │          │          │          │
-            &none      &none      &none      &none      &none             &none      &none      &none      &none      &none
+            &none      &none      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP    &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans    &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
@@ -152,10 +160,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │      │  HOME    │          │  UP      │          │BACKSPACE │
-            &kp ESC      &none  &kp LS(LG(N4)) &kp LS(LG(S)) &none         &kp HOME   &none      &kp UP     &none     &kp BACKSPACE 
+            &kp ESC      &none  &none       &none          &none         &kp HOME   &none      &kp UP     &none     &kp BACKSPACE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  LCTRL    │  LALT    │ LGUI    │          │          │      │  LEFT     │  UP     │  DOWN    │  RIGHT   │  DEL   │
-            &sk LCTRL   &sk LALT   &sk LGUI  &none      &none             &kp LEFT    &kp UP   &kp DOWN  &kp RIGHT  &kp DEL
+        //│  LCTRL    │  LALT    │ LGUI    │          │          │      │  LEFT     │  DOWN     │  UP    │  RIGHT   │  DEL   │
+            &sk LCTRL   &sk LALT   &sk LGUI  &none      &kp TAB           &kp LEFT    &kp DOWN   &kp UP  &kp RIGHT  &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │      │          │          │          │          │          │
             &none      &none      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP    &none      &none      &none      &none      &none
