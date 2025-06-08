@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - my-config
+      - main
   workflow_dispatch:
 
 jobs:
