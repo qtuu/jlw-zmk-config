@@ -17,5 +17,3 @@ jobs:
       keymap_patterns: "config/le_jlwffre.keymap"        # path to the keymaps to parse
       config_path: "keymap-drawer/config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
-      parse_args: "-d keymap-drawer/le_jlwffre-layouts.dtsi"
-      draw_args: ""
