@@ -10,7 +10,7 @@ on:
 jobs:
   fetch-dtsi:
     steps:
-      - run: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           sparse-checkout: boards/arm/le_jlwffre/le_jlwffre-layouts.dtsi
           sparse-checkout-cone-mods: false
