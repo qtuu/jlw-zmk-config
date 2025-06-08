@@ -1,5 +1,4 @@
-layouts:
- dts_layout: ./le_jlwffre-layouts.dtsi
+layouts: {dts_layout: le_jlwffre-layouts.dtsi}
 draw_config:
   key_w: 60.0
   key_h: 56.0
