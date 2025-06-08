@@ -2,6 +2,12 @@ on:
   push:
     branches:
       - main
+    paths:
+     - zephyr/**
+     - config/**
+     - boards/**
+     - build.yaml
+     - .github/workflows/build.yml
   workflow_dispatch:
 
 jobs:
