@@ -14,10 +14,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: boards/arm/le_jlwffre/le_jlwffre-layouts.dtsi
-          sparse-checkout-cone-mods: false
+          sparse-checkout-cone-mode: false
           repository: josh-l-wang/zmk-jlw-keyboards
           path: temp-dtsi
   draw:
+    needs: [fetch-dtsi]
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write  # allow workflow to commit to the repo
