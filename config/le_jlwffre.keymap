@@ -132,14 +132,14 @@
         nav_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │      │  HOME    │          │  UP      │          │BACKSPACE │
-            &kp ESC      &none  &none       &none          &none         &kp HOME   &none      &kp UP     &none     &kp BACKSPACE 
+        //│          │          │          │          │          │      │          │          │  UP      │          │BACKSPACE │
+            &kp ESC      &none  &none       &kp LC(R)      &none         &none       &none      &kp UP     &none     &kp BACKSPACE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  LCTRL    │  LALT    │ LGUI    │          │          │      │  LEFT     │  DOWN     │  UP    │  RIGHT   │  DEL   │
-            &sk LCTRL   &sk LALT   &sk LGUI  &none      &kp TAB           &kp LEFT    &kp DOWN   &kp UP  &kp RIGHT  &kp DEL
+        //│  LCTRL    │  LALT    │ LGUI    │          │          │      │  LEFT    │  DOWN    │  UP      │  RIGHT   │  DEL     │
+            &sk LCTRL   &sk LALT   &sk LGUI  &kp LC(F)   &kp TAB           &kp LEFT    &kp DOWN   &kp UP  &kp RIGHT  &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │      │          │          │          │          │          │
-            &none      &none      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP    &none      &none      &none      &none      &none
+        //│          │          │          │          │  HOME    │      │    END   │          │          │          │          │
+            &kp LC(Z)   &kp LC(X) &kp LC(C)  &kp LC(V)    &kp HOME       &kp END      &none      &none      &none      &kp RGUI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans    &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
@@ -167,13 +167,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │      │          │          │          │  F11     │  F12     │
-            &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none      &none      &none      &none      &kp F11    &kp F12
+            &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none      &kp C_MUTE     &none      &none      &kp F11    &kp F12
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F1      │  F2      │  F3      │  F4      │  F5      │      │  F6      │  F7      │  F8      │  F9      │  F10     │
             &kp F1    &kp F2        &kp F3       &kp F4     &kp F5            &kp F6     &kp F7   &kp F8    &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │      │          │          │          │          │          │
-            &none      &none      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP    &none      &none      &none      &none      &none
+            &none      &none      &none      &kp C_VOL_UP &none            &none    &kp C_VOL_DOWN  &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans    &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
