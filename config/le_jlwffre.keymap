@@ -107,7 +107,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │                      │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B                             &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &mo NAV      &kp LSHIFT    &tog FUN              &kp SPACE  &mo SYM 
+                                            &mo NAV      &kp LSHIFT    &mo FUN              &kp SPACE  &mo SYM 
         //                                 ╰──────────┴──────────╯                      ╰──────────┴──────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -115,11 +115,11 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ~       │  `       │  "       │          │          │      │          │          │ !        │  F11     │  F12     │
-            &kp GRAVE &kp LS(GRAVE) &kp DQT &none       &none            &none    &none        &kp EXCLAMATION  &kp F11    &kp F12
+        //│  ~       │  `       │  "       │          │          │      │          │ ü        │ !        │  ö       │  F12     │
+            &kp GRAVE &kp LS(GRAVE) &kp DQT &none       &none            &none    &kp RA(U)   &kp EXCLAMATION &kp RA(O) &kp F12
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  F1      │  F2      │ '        │  =       │  (       │      │  )       │  _       │  @       │  {       │  }       │
-            &kp F1    &kp F2     &kp APOS  &kp EQUAL     &kp LPAR        &kp RPAR     &kp UNDER  &kp AT  &kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET)
+        //│  ä       │  ß       │ '        │  =       │  (       │      │  )       │  _       │  @       │  {       │  }       │
+            &kp RA(A)  &kp RA(S) &kp APOS  &kp EQUAL     &kp LPAR        &kp RPAR     &kp UNDER  &kp AT  &kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ^       │ #        │  *       │  +       │ [        │      │  ]       │          │          │          │          │
             &kp LS(N6) &kp LS(N3) &kp LS(N8) &kp PLUS &kp LEFT_BRACKET   &kp RIGHT_BRACKET     &kp MINUS      &none      &none      &none
@@ -132,8 +132,8 @@
         nav_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │      │          │          │  UP      │          │BACKSPACE │
-            &kp ESC      &none  &none       &kp LC(R)      &none         &none       &none      &kp UP     &none     &kp BACKSPACE 
+        //│          │          │          │          │PRINTSCREEN│     │          │          │  UP      │          │BACKSPACE │
+            &kp ESC      &none  &none       &kp LC(R)   &kp PSCRN         &none       &none      &kp UP     &none     &kp BACKSPACE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  LCTRL    │  LALT    │ LGUI    │          │          │      │  LEFT    │  DOWN    │  UP      │  RIGHT   │  DEL     │
             &sk LCTRL   &sk LALT   &sk LGUI  &kp LC(F)   &kp TAB           &kp LEFT    &kp DOWN   &kp UP  &kp RIGHT  &kp DEL
@@ -149,8 +149,8 @@
         num_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ` ~     │          │          │          │          │      │  \ |     │  - _     │  = +     │  [       │  ]       │
-            &kp GRAVE  &none      &none      &none      &none             &kp BSLH   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT
+        //│  ` ~     │          │          │          │          │      │  \ |     │  - _     │  = +     │  [       │          │
+            &kp GRAVE  &none      &none      &none      &none             &kp BSLH   &kp MINUS  &kp EQUAL  &kp LBKT   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │      │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │
             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5            &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
