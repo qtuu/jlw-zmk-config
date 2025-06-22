@@ -115,14 +115,14 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ~       │  `       │  "       │          │          │      │          │ ü        │ !        │  ö       │  F12     │
-            &kp GRAVE &kp LS(GRAVE) &kp DQT &none       &none            &none    &kp RA(U)   &kp EXCLAMATION &kp RA(O) &kp F12
+        //│  ~       │  `       │  "       │    |     │    &     │      │  ß       │ ü        │ !        │  ö       │  F12     │
+            &kp GRAVE &kp LS(GRAVE) &kp DQT &kp PIPE  &kp AMPS          &kp RA(S)   &kp RA(U)   &kp EXCLAMATION &kp RA(O) &kp F12
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ä       │  ß       │ '        │  =       │  (       │      │  )       │  _       │  @       │  {       │  }       │
-            &kp RA(A)  &kp RA(S) &kp APOS  &kp EQUAL     &kp LPAR        &kp RPAR     &kp UNDER  &kp AT  &kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET)
+        //│  ä       │  $       │ '        │  =       │  (       │      │  )       │  _       │  @       │  {       │  }       │
+            &kp RA(A) &kp DOLLAR &kp APOS  &kp EQUAL     &kp LPAR        &kp RPAR     &kp UNDER  &kp AT  &kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ^       │ #        │  *       │  +       │ [        │      │  ]       │          │          │          │          │
-            &kp LS(N6) &kp LS(N3) &kp LS(N8) &kp PLUS &kp LEFT_BRACKET   &kp RIGHT_BRACKET     &kp MINUS      &none      &none      &none
+        //│  ^       │ #        │  *       │  +       │ [        │      │  ]       │   -      │ %        │          │ \        │
+            &kp CARRET &kp HASH &kp STAR &kp PLUS &kp LEFT_BRACKET    &kp RIGHT_BRACKET &kp MINUS &kp PERCENT &none &kp BACKSLASH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans    &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
