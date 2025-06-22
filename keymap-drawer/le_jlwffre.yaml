@@ -5,15 +5,15 @@ layers:
   - '`'
   - Sft+`
   - '"'
-  - ''
-  - ''
-  - ''
+  - '|'
+  - '&'
+  - AltGr+S
   - AltGr+U
   - '!'
   - AltGr+O
   - F12
   - AltGr+A
-  - AltGr+S
+  - $
   - ''''
   - '='
   - (
@@ -22,16 +22,16 @@ layers:
   - '@'
   - Sft+[
   - Sft+]
-  - Sft+6
-  - Sft+3
-  - Sft+8
+  - CARRET
+  - '#'
+  - '*'
   - +
   - '['
   - ']'
   - '-'
+  - '%'
   - ''
-  - ''
-  - ''
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
