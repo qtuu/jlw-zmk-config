@@ -122,7 +122,7 @@
             &kp RA(A) &kp DOLLAR &kp APOS  &kp EQUAL     &kp LPAR        &kp RPAR     &kp UNDER  &kp AT  &kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ^       │ #        │  *       │  +       │ [        │      │  ]       │   -      │ %        │          │ \        │
-            &kp CARRET &kp HASH &kp STAR &kp PLUS &kp LEFT_BRACKET    &kp RIGHT_BRACKET &kp MINUS &kp PERCENT &none &kp BACKSLASH
+            &kp CARET &kp HASH &kp STAR &kp PLUS &kp LEFT_BRACKET    &kp RIGHT_BRACKET &kp MINUS &kp PERCENT &none &kp BACKSLASH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans    &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
