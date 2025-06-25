@@ -45,7 +45,7 @@ layers:
   - PSCRN
   - ''
   - ''
-  - UP
+  - ''
   - ''
   - BACKSPACE
   - {t: LCTRL, h: sticky}
@@ -79,10 +79,10 @@ layers:
   - ''
   - ''
   - ''
-  - \
-  - '-'
-  - '='
-  - '['
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - '1'
   - '2'
