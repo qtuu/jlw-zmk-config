@@ -22,7 +22,7 @@ layers:
   - '@'
   - Sft+[
   - Sft+]
-  - CARRET
+  - ^
   - '#'
   - '*'
   - +
